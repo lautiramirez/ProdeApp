@@ -1,11 +1,12 @@
 body{
     background-color: rgb(12, 46, 75);
+    margin: 0;
 }
 
 .container{
     background-color: brown;
     color: white;
-    margin: 10px auto;
+    margin: 0 auto 5px auto;
     /* fix responsive  */
     min-width: 600px; 
     
@@ -16,6 +17,13 @@ body{
 header img{
     width: 100px;
 }
+header h1{
+    text-shadow: 0.1em 0.1em #333; 
+}
+header > h1, img{
+    margin: auto 5px auto 5px ;
+}
+
 
 header{
     display: flex;
@@ -40,6 +48,10 @@ header{
     justify-content: space-around;
     list-style: none;
     text-decoration: none;
+
+}
+nav ul > a{
+    text-decoration: none;
 }
 
 nav ul li{
@@ -51,6 +63,9 @@ nav ul li{
 }
 
 .footer_content{
+    display: flex;
+    justify-content: center;
     background-color: black;
-    font-size: 12px;
+    font-size: 16px;
 }
+
